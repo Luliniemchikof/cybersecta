@@ -1,0 +1,84 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: black;
+    background-image: url('../img/fondo.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+main {
+    background-color: rgb(1, 136, 1);
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5%;
+}
+
+h1 {
+    font-size: 3em;
+    padding: 1em 2.2em;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 800;
+    font-style: normal; 
+}
+
+.link {
+    text-align: center;
+    font-size: 1.5em;
+}
+.link a:link{
+    color: black;
+    text-decoration: none;
+}
+.link a:visited{
+    color: black;
+    text-decoration: none;
+}
+.link a:hover{
+    color: yellowgreen;
+    text-decoration:underline;
+}
+.link a:active{
+    color: rgb(50, 66, 205);
+    text-decoration: underline;
+}
+
+
+section {
+    align-self: flex-start;
+    margin: 1em;
+   
+}
+section p{
+    background-color: rgba(1, 100, 1, 0.582);
+    color: aliceblue;
+}
+.click:hover{
+color: rgb(163, 84, 238);
+}
+.click:active{
+    color: rgb(148, 255, 9);
+    }
+.posicionar-mouse:hover{
+    color: rgb(248, 0, 95);
+}
+
+
+  @media (max-width:768px){
+
+  }
