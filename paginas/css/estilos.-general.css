@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    box-sizing: border-box;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    pointer-events:stroke;
+}
+
+.cuerpo{
+    display: flex;
+    flex-direction: row;
+}
+
+nav{
+    width: 20%;
+    align-self:flex-end;
+    margin: .5em;
+    border: .1em dashed rgb(129, 129, 44);
+}
+ul{
+    display: block;
+}
+ul li a, .nav-link, .dropdown-item{
+    color: bisque;
+}
+.nav-link:hover{
+    color: rgb(175, 175, 101);
+}
+.nav-link:active{
+    color: rgb(122, 214, 103);
+}
+ul li a:hover{
+    color: rgb(175, 175, 101);
+}
+ul li a:active{
+    color: rgb(122, 214, 103);
+}
+ul .dropdown-menu{
+    background-color: black;
+}
+
+.texto{
+    width: 80%;
+    align-self: flex-start;
+    padding: .5em;
+    border: .1em dashed rgb(129, 129, 44);
+
+}

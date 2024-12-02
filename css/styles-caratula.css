@@ -78,7 +78,9 @@ color: rgb(163, 84, 238);
     color: rgb(248, 0, 95);
 }
 
-
+.audio{
+    display: none;
+}
   @media (max-width:768px){
 
   }
