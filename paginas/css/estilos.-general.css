@@ -6,23 +6,42 @@ body{
     justify-content: center;
     align-items: center;
 }
+.contenedor{
+    width: 100%;
+}
 h1{
     pointer-events:stroke;
+    color: rgb(128, 121, 73);
+    margin: .5em .5em .5em .7em;
+}
+
+h2{
+    text-align: center;
 }
 
 .cuerpo{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
+    width: 100%;
 }
 
+.texto{
+    margin-left: .5em;
+    color: rgb(240, 204, 160);
+    text-indent: 1em;
+}
 nav{
+    width: 100%;
+}
+div .desktop-menu{
     width: 20%;
-    align-self:flex-end;
+    align-self:baseline;
     margin: .5em;
     border: .1em dashed rgb(129, 129, 44);
 }
 ul{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 ul li a, .nav-link, .dropdown-item{
     color: bisque;

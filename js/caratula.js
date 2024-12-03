@@ -14,6 +14,15 @@ main.addEventListener('mouseout', e => {
     main.style.backgroundImage = ''; // Elimina el fondo
 });
 
+//
+audio.addEventListener('mouseover', e => { //Interacción con el fondo
+    pista.play();
+});
+
+audio.addEventListener('mouseout', e => { //Interacción con el fondo
+    pista.pause();
+    
+});
 
 // Hago la interacción para la emergencia de las ventanas con videos
 
@@ -30,19 +39,9 @@ emergenciaWindow.addEventListener('click', e => {
     window.open(video3, 'ventana3', 'width=430,height=330,left=100,top=150');
 });
 
-//
-audio.addEventListener('mouseover', e => { //Interacción con el fondo
-    pista.play();
-});
 
-audio.addEventListener('mouseout', e => { //Interacción con el fondo
-    pista.pause();
-    
-});
 
-audio.addEventListener('mouseout', e => {
-    main.style.backgroundImage = ''; // Elimina el fondo
-});
+
 
 //AGREGAR EL RESPONSIVE
 console.log('Hola, sujeto extraño! Esperamos que te guste. Podés pasarnos dinero al alias "maligna.sospechosa". Te queremos mucho <3')
