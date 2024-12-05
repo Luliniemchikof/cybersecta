@@ -81,6 +81,10 @@ color: rgb(163, 84, 238);
 .audio{
     display: none;
 }
+.imgCuerpo1{
+    width: 20%;
+    float: inline-start;
+}
   @media (max-width:768px){
 
   }

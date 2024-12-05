@@ -5,18 +5,42 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    
 }
 .contenedor{
     width: 100%;
+    line-height: 2.4em;
+    background-color: black;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 100;
+    font-style:normal;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
 }
 h1{
     pointer-events:stroke;
     color: rgb(128, 121, 73);
     margin: .5em .5em .5em .7em;
+    font-family: "Orbitron", sans-serif;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 2.4em;
+    letter-spacing: .1em; 
 }
-
+.logo{
+    width: 6%;
+    height: 6%;
+    margin: .5em;
+}
 h2{
     text-align: center;
+    padding: 1em;
+    
 }
 
 .cuerpo{
@@ -25,13 +49,13 @@ h2{
     width: 100%;
 }
 
-.texto{
-    margin-left: .5em;
-    color: rgb(240, 204, 160);
-    text-indent: 1em;
-}
 nav{
     width: 100%;
+    font-family: "Orbitron", sans-serif;
+    font-size: 1.1em;
+    font-weight: 50;
+    font-style: normal;
+    letter-spacing: .1em; 
 }
 div .desktop-menu{
     width: 20%;
@@ -45,6 +69,16 @@ ul{
 }
 ul li a, .nav-link, .dropdown-item{
     color: bisque;
+    text-decoration: none;
+    
+}
+.nav-link{
+    padding: 0;
+    margin: .6em;
+}
+
+.dropdown-item{
+    font-size: .9em;
 }
 .nav-link:hover{
     color: rgb(175, 175, 101);
@@ -59,7 +93,7 @@ ul li a:active{
     color: rgb(122, 214, 103);
 }
 ul .dropdown-menu{
-    background-color: black;
+    background-color: rgb(13, 22, 12);
 }
 
 .texto{
@@ -67,5 +101,51 @@ ul .dropdown-menu{
     align-self: flex-start;
     padding: .5em;
     border: .1em dashed rgb(129, 129, 44);
+    margin-left: .5em;
+    color: rgb(240, 204, 160);
+    text-indent: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.textoCentrado{
+    text-align: center;
+}
+.parrafoConImagenes{
+    width:90%;
+    align-self: center;
+    padding: .1em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.imgCuerpo1{
+    width: 30%;
+    height: 25%;
+}
+.imgCuerpo2{
+    width: 25%;
+    height: 20%;
+}
+.imgCuerpo{
+    margin: .5em;
+    padding: .5em;
+}
+
+@media (max-width:1024px){
+    nav{
+        font-size: .8em;
+        
+    }
+}
+
+@media (max-width:768px){
+    .cuerpo{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }  
 }
