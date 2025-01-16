@@ -134,18 +134,92 @@ ul .dropdown-menu{
     margin: .5em;
     padding: .5em;
 }
+.swiffy-slider{
+    display: none;
+}
+
+.topnav{
+    display: none;
+}
 
 @media (max-width:1024px){
     nav{
         font-size: .8em;
-        
+        margin: 1em;
     }
-}
-
-@media (max-width:768px){
     .cuerpo{
         display: flex;
         flex-direction: column;
         width: 100%;
-    }  
+    } 
+    .mobile-menu{
+        width: 80%;
+        align-self: center;   
+    }
+}
+
+@media (max-width:768px){
+    
+    .parrafoConImagenes{
+        display: none;
+    }
+    .swiffy-slider{
+        display: block;
+    }
+    .logo{
+        width:10%
+    }
+
+    .desktop-menu{
+        display: none;
+    }
+    .texto{
+        width: 95%;
+    }
+    .slider-container li img{
+        width: 100%;
+    }
+    /* Estilos del menu de navegación */
+    .topnav {
+        display: block;
+        overflow: hidden;
+        background-color: #33333300;
+        position: relative;
+    }
+  
+    /* Escondo los links dentro del menu de navegación (excepto por el logo/home) */
+    .topnav #myLinks {
+        display: none;
+    }
+  
+  /* Estilos de los links del menu */
+    .topnav a {
+        color: white;
+        padding: 1em 2em;
+        text-decoration: none;
+        font-size: 17px;
+        display: flex;
+    }
+  
+    /* Estilos del menu de hamburguesa */
+    .topnav a.icon {
+        background: black;
+        display: block;
+        position:absolute;
+        right: 0;
+        top: 0;
+    }
+  
+    /* Agregar background-color en el mouseover */
+    .topnav a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+  
+    /* Estilos de activación de link (o home/logo) */
+    .active {
+        background-color: #04AA6D;
+        color: white;
+    }
+  
 }

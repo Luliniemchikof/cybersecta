@@ -26,7 +26,7 @@ main {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 h1 {
@@ -86,5 +86,5 @@ color: rgb(163, 84, 238);
     float: inline-start;
 }
   @media (max-width:768px){
-
+    
   }
