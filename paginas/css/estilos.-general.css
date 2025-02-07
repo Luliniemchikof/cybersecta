@@ -101,7 +101,8 @@ ul .dropdown-menu{
     align-self: flex-start;
     padding: .5em;
     border: .1em dashed rgb(129, 129, 44);
-    margin-left: .5em;
+    margin: .5em;
+    padding: 1em;
     color: rgb(240, 204, 160);
     text-indent: 1em;
     display: flex;
@@ -142,6 +143,49 @@ ul .dropdown-menu{
     display: none;
 }
 
+/*Estilos de Instalaciones*/
+.verInstalaciones{
+    display: flex;
+    flex-direction: row;
+    max-width: 90%;
+    margin: .5em;
+    flex-wrap: wrap;
+}
+.verInstalaciones a{
+    background-color: #096946;
+    border: .5em solid #096946;
+    -webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+ 	border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .7em;
+    margin: .5em;
+    width: 30%;
+    text-decoration: none;
+} /*Cambiar 2nd y 3er child a otro color*/
+.verInstalaciones a:hover{
+    background-color: #04AA6D;
+    border: .5em solid #04AA6D;
+    padding: 1.2em;
+	-webkit-border-radius: 15px;
+  	-moz-border-radius: 15px;
+ 	border-radius: 15px;
+}
+.imgVerInstalaciones{
+    max-width: 100%;
+    margin: .5em;
+
+}
+.strongInstalaciones{
+    color: #04AA6D;
+}
+.textoVerInstalaciones{
+    color: #022719;
+    font-weight: 500;
+}
 @media (max-width:1024px){
     nav{
         font-size: .8em;
@@ -152,6 +196,7 @@ ul .dropdown-menu{
         flex-direction: column;
         width: 100%;
     } 
+    /*Agregar diferencias en el despliegue del menu*/
     .mobile-menu{
         width: 80%;
         align-self: center;   
@@ -222,4 +267,20 @@ ul .dropdown-menu{
         color: white;
     }
   
+    /*Estilos Instalaciones*/
+    .verInstalaciones{
+        flex-direction: column;
+        max-width: 90%;
+    }
+    .verInstalaciones a{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: .7em;
+        margin: 1em;
+        width: 100%;
+    }
+    .imgVerInstalaciones{
+        max-width: 70%;
+    }
 }
