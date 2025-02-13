@@ -4,15 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Instalaciones: Kunka Galería</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../css/estilos.-general.css">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font 1-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font 1-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> <!--Font 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font 2-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Font 2-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> <!--Font 2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><!--Estilos de menu-->
+    <link rel=stylesheet href=hamburger-menu.css> <!--hamburguer menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.-general.css"> <!--CSS general-->
+  </head>
   <body>
     <div class="contenedor">
       <header>
+        <img class="logo" src="../img/logo.jpg" alt="logo">
         <h1>Cybersecta</h1>
       </header>
       <div class="cuerpo">
@@ -23,13 +29,15 @@
               <li class="nav-link"><a href="#" target="_self">LINK</a></li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Instalaciones</a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Sobre instalaciones</a></li>
                   <li><a class="dropdown-item" href="../instalaciones/kunka-galeria.html">Kunka Galería</a></li>
                   <li><a class="dropdown-item" href="../instalaciones/kunka-2.html">Kunka 2</a></li>
                   <li><a class="dropdown-item" href="../instalaciones/laberinto-picnic.html">Laberinto</a></li>
                 </ul>
               </li>
-              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="vj/index.html" role="button" aria-expanded="false">VJ</a>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../vj/index.html" role="button" aria-expanded="false">VJ</a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../vj/index.html">Sobre vj</a></li>
                   <li><a class="dropdown-item" href="../vj/manufresh-1.html">Primera vez: Manu Fresh</a></li>
                   <li><a class="dropdown-item" href="../vj/manufresh-billetes.html">Manufresh: billetes</a></li>
                   <li><a class="dropdown-item" href="../vj/manufresh-estimulos.html">Manu Fresh: Estímulos</a></li>
@@ -37,32 +45,73 @@
               </li>
               <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="vj/index.html" role="button" aria-expanded="false">Colaboradores</a>
                 <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../colaboradores/index.html">Sobre colaboradores</a></li>
                   <li><a class="dropdown-item" href="../colaboradores/luciana-niemchikof.html">Maligna y Sospechosa</a></li>
-                  <li><a class="dropdown-item" href="../colaboradores/luciano-biasutti.html">Presuti</a></li>
+                  <li><a class="dropdown-item" href="../colaboradores/luciano-biasutti.html">Prensuti</a></li>
                   <li><a class="dropdown-item" href="../colaboradores/pedro-ponto-rojas.html">PePontoRojas</a></li>
                 </ul>
               </li>
-              <li class="nav-item"><a class="nav-link" href="#" target="_self">UN LINK</a></li>
-              <li class="nav-item"><a class="nav-link" href="#" target="_self">OTRO LINK</a></li>
+              <li class="nav-item"><a class="nav-link" href="../noticias/index.html" target="_self">Noticias</a></li>
+              <li class="nav-item"><a class="nav-link" href="../juego/index.html" target="_self">Juego cybersectario</a></li>
               <li class="nav-item"><a class="nav-link" href="#" target="_self">OTRO LINK</a></li>
             </ul>
           </nav>
         </div>
-        
+        <div class="mobile-menu"> <!--Nav de la versión mobile-->
+          <nav>
+            <div class="topnav">
+              <a href="kunka-galeria.html" target="_self">Kunka Galería</a>
+              <div id="myLinks">
+                <ul class="nav nav-pills">
+                  <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                  <li class="nav-link"><a href="#" target="_self">LINK</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Instalaciones</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../instalaciones/index.html">Sobre instalaciones</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/kunka-galeria.html">Kunka Galería</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/kunka-2.html">Kunka 2</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/laberinto-picnic.html">Laberinto</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../vj/index.html" role="button" aria-expanded="false">VJ</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../vj/index.html">Sobre vj</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-1.html">Primera vez: Manu Fresh</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-billetes.html">Manufresh: billetes</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-estimulos.html">Manu Fresh: Estímulos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../colaboradores/index.html" role="button" aria-expanded="false">Colaboradores</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../colaboradores/index.html">Sobre colaboradores</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/luciana-niemchikof.html">Maligna y Sospechosa</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/luciano-biasutti.html">Prensuti</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/pedro-ponto-rojas.html">PePontoRojas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="../noticias/index.html" target="_self">Noticias</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../juego/index.html" target="_self">Juego cybersectario</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#" target="_self">OTRO LINK</a></li>
+                </ul>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      
         <section class="texto">
+          <h2>Los orígenes de Cybersecta</h2>
+          <p class="textoCentrado">Esta primera instalación para Kunka Galería a cargo de <a class="linkPedro" href="../colaboradores/pedro-ponto-rojas.html" data-toggle="popover" title="Ver colaborador: Pedro" data-content="Ver colaborador: Pedro" >Pedro</a> y <a class="linkLuciano" href="../colaboradores/luciano-biasutti.html" data-toggle="popover" title="Ver colaborador: Luciano" data-content="Ver colaborador: Luciano">Luciano</a> el 01/04/2023 podría referirse como los orígenes de Cybersecta, donde se experimentó con una cámara web para la captación de las imágenes en tiempo real, una computadora para el procesamiento con medios programables y un televisor de tubo para la salida de las imágenes</p>
         </section>
-      </div>
-      <section>
-
-      </section>
 
       <footer>
         <p></p>
       </footer>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> 
-    
-    <script src="js/script-general.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script-general.js"></script>
     
   </body>
     

@@ -49,6 +49,16 @@ h2{
     width: 100%;
 }
 
+a{
+    text-decoration: none;
+    color: #04AA6D;
+}
+a:hover{
+    color: #36c490;
+}
+a:active{
+    color: yellowgreen;
+}
 nav{
     width: 100%;
     font-family: "Orbitron", sans-serif;
@@ -96,6 +106,7 @@ ul .dropdown-menu{
     background-color: rgb(13, 22, 12);
 }
 
+
 .texto{
     width: 80%;
     align-self: flex-start;
@@ -104,10 +115,11 @@ ul .dropdown-menu{
     margin: .5em;
     padding: 1em;
     color: rgb(240, 204, 160);
-    text-indent: 1em;
+    text-indent: 1.5em;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: justify;
 
 }
 .textoCentrado{
@@ -135,7 +147,7 @@ ul .dropdown-menu{
     margin: .5em;
     padding: .5em;
 }
-.swiffy-slider{
+.swiffy-slider, .pMobile{
     display: none;
 }
 
@@ -144,9 +156,21 @@ ul .dropdown-menu{
 }
 
 /*Estilos de Instalaciones*/
+.imgFloat1, .imgFloat2{
+    max-width: 35%;
+    margin: 1em;
+}
+.imgFloat1{
+    float: inline-end;
+}
+.imgFloat2{
+    float: inline-start;
+}
 .verInstalaciones{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     max-width: 90%;
     margin: .5em;
     flex-wrap: wrap;
@@ -165,7 +189,12 @@ ul .dropdown-menu{
     margin: .5em;
     width: 30%;
     text-decoration: none;
-} /*Cambiar 2nd y 3er child a otro color*/
+} 
+.verInstalaciones a:nth-child(2n){
+    background-color: #045b69;
+    border: .5em solid #045b69;
+}
+
 .verInstalaciones a:hover{
     background-color: #04AA6D;
     border: .5em solid #04AA6D;
@@ -174,9 +203,14 @@ ul .dropdown-menu{
   	-moz-border-radius: 15px;
  	border-radius: 15px;
 }
+.verInstalaciones a:nth-child(2n):hover{
+    background-color:#045faa;
+    border: .5em solid #045faa;
+}
+
 .imgVerInstalaciones{
     max-width: 100%;
-    margin: .5em;
+    margin: .2em;
 
 }
 .strongInstalaciones{
@@ -185,6 +219,70 @@ ul .dropdown-menu{
 .textoVerInstalaciones{
     color: #022719;
     font-weight: 500;
+    text-align: center;
+    margin: .2;
+}
+#labe2{
+    display: none;
+}
+.elementosInstalacion{
+    list-style-type: none;
+}
+
+.elementosInstalacion li{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.elementosInstalacion li div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.elementosInstalacion li p{
+    align-self: center;
+}
+.imgElementosInstalacion, .imgBocetos{
+    max-width: 35%;
+    margin: 1em;
+    padding: .3em;
+    border: .1em solid white;
+}
+.imgBocetos{
+    max-width: 50%;
+}
+/*Estilos de colaboradores*/
+.linkPedro{
+    color: #3c99e6;
+    font-weight: 400;
+}
+.linkPedro:hover{
+    color: #045faa;
+}
+.linkPedro:active{
+    color:#04AA6D;
+}
+.linkLuciano{
+    color: rgb(143, 90, 212);
+    font-weight: 400;
+}
+.linkLuciano:hover{
+    color: rgb(102, 51, 168);
+}
+.linkLuciano:active{
+    color:#04AA6D;
+}
+.linkLuciana{
+    color: rgb(184, 60, 66);
+    font-weight: 400;
+}
+.linkLuciana:hover{
+    color: rgb(134, 31, 36);
+}
+.linkLuciana:active{
+    color:#04AA6D;
 }
 @media (max-width:1024px){
     nav{
@@ -196,33 +294,13 @@ ul .dropdown-menu{
         flex-direction: column;
         width: 100%;
     } 
+    .desktop-menu{
+        display: none;
+    }
     /*Agregar diferencias en el despliegue del menu*/
     .mobile-menu{
         width: 80%;
         align-self: center;   
-    }
-}
-
-@media (max-width:768px){
-    
-    .parrafoConImagenes{
-        display: none;
-    }
-    .swiffy-slider{
-        display: block;
-    }
-    .logo{
-        width:10%
-    }
-
-    .desktop-menu{
-        display: none;
-    }
-    .texto{
-        width: 95%;
-    }
-    .slider-container li img{
-        width: 100%;
     }
     /* Estilos del menu de navegación */
     .topnav {
@@ -266,8 +344,40 @@ ul .dropdown-menu{
         background-color: #04AA6D;
         color: white;
     }
+    .elementosInstalacion li div{
+        flex-direction: column;
+    }
+}
+
+@media (max-width:768px){
+    
+    .parrafoConImagenes{
+        display: none;
+    }
+    .swiffy-slider, .pMobile{
+        display: block;
+    }
+    .pMobile{
+        font-size: 12.5px;
+        letter-spacing: .05em;
+    }
+    .logo{
+        width:10%
+    }
+
+    .texto{
+        width: 95%;
+    }
+    .slider-container li img{
+        width: 100%;
+    }
+    
   
     /*Estilos Instalaciones*/
+    .imgFloat1, .imgFloat2{
+        float: none;
+        max-width: 90%;
+    }
     .verInstalaciones{
         flex-direction: column;
         max-width: 90%;
@@ -282,5 +392,18 @@ ul .dropdown-menu{
     }
     .imgVerInstalaciones{
         max-width: 70%;
+    }
+    #labe1{
+        display: none;
+    }
+    #labe2{
+        display: block;
+    }
+    .elementosInstalacion li{
+        flex-direction: column;
+    }
+    .imgElementosInstalacion,.imgBocetos{
+        max-width: 100%;
+       
     }
 }
