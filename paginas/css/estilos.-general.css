@@ -166,7 +166,7 @@ ul .dropdown-menu{
 .imgFloat2{
     float: inline-start;
 }
-.verInstalaciones{
+.verInstalaciones, .verVj{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -175,7 +175,7 @@ ul .dropdown-menu{
     margin: .5em;
     flex-wrap: wrap;
 }
-.verInstalaciones a{
+.verInstalaciones a,.verVj a{
     background-color: #096946;
     border: .5em solid #096946;
     -webkit-border-radius: 10px;
@@ -208,6 +208,7 @@ ul .dropdown-menu{
     border: .5em solid #045faa;
 }
 
+
 .imgVerInstalaciones{
     max-width: 100%;
     margin: .2em;
@@ -216,7 +217,7 @@ ul .dropdown-menu{
 .strongInstalaciones{
     color: #04AA6D;
 }
-.textoVerInstalaciones{
+.textoVerInstalaciones, .textoVerVj{
     color: #022719;
     font-weight: 500;
     text-align: center;
@@ -244,15 +245,51 @@ ul .dropdown-menu{
 .elementosInstalacion li p{
     align-self: center;
 }
-.imgElementosInstalacion, .imgBocetos{
+.imgElementosInstalacion, .imgBocetos, .videoManuFresh{
     max-width: 35%;
     margin: 1em;
     padding: .3em;
     border: .1em solid white;
 }
+.divBocetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 .imgBocetos{
     max-width: 50%;
 }
+
+/*Estilos Vj*/
+.verVj a{
+    background-color: rgb(97, 13, 97);
+    border: .5em solid rgb(97, 13, 97);
+} 
+.verVj a:nth-child(2n){
+    background-color: rgb(129, 143, 1);
+    border: .5em solid rgb(129, 143, 1);
+}
+
+.verVj a:hover{
+    background-color: rgb(165, 45, 165);
+    border: .5em solid rgb(165, 45, 165);
+    padding: 1.2em;
+	-webkit-border-radius: 15px;
+  	-moz-border-radius: 15px;
+ 	border-radius: 15px;
+}
+.verVj a:nth-child(2n):hover{
+    background-color:rgb(170, 184, 52);
+    border: .5em solid rgb(170, 184, 52);
+}
+
+.textoVerVj{
+    color: #1d0101;
+}
+.videoManuFresh{
+    max-width: 70%;
+}
+
 /*Estilos de colaboradores*/
 .linkPedro{
     color: #3c99e6;
@@ -347,6 +384,9 @@ ul .dropdown-menu{
     .elementosInstalacion li div{
         flex-direction: column;
     }
+    .texto{
+        align-self: center;
+    }
 }
 
 @media (max-width:768px){
@@ -378,11 +418,11 @@ ul .dropdown-menu{
         float: none;
         max-width: 90%;
     }
-    .verInstalaciones{
+    .verInstalaciones .verVj{
         flex-direction: column;
         max-width: 90%;
     }
-    .verInstalaciones a{
+    .verInstalaciones a, .verVj a{
         flex-direction: row;
         justify-content: center;
         align-items: center;
