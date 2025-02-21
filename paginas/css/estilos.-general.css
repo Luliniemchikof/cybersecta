@@ -73,6 +73,9 @@ div .desktop-menu{
     margin: .5em;
     border: .1em dashed rgb(129, 129, 44);
 }
+#menuInicio{
+    width: 95%;
+}
 ul{
     display: flex;
     flex-direction: column;
@@ -321,6 +324,25 @@ ul .dropdown-menu{
 .linkLuciana:active{
     color:#04AA6D;
 }
+
+/*Estilos Contacto*/
+.card{ /*estilo de carta en inicio*/
+    background-color: #03291b;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:2.5em 1em 1em 1em;
+}
+.btn{
+    width: 100%;
+}
+.linkTitulo{
+    color: #fff;
+}
+.linkTitulo:hover{
+    color: #fde57a;
+}
 .divFormulario{
     width: 100%;
     display: flex;
@@ -333,8 +355,11 @@ ul .dropdown-menu{
     justify-content: center;
     padding: 1em;
 }
-#textoFormuladio{
+#textoFormulario{
     justify-content: center;
+}
+.btnContacto{
+    width: 20%;
 }
 label {
     width: 90%;
@@ -342,6 +367,10 @@ label {
 
 h3{
     display: block;
+}
+
+.graciasFormulario, .invalidoFormulario{
+    display: none;
 }
 
 @media (max-width:1024px){
@@ -409,6 +438,9 @@ h3{
     }
     .texto{
         align-self: center;
+    }
+    .card{
+        display: none;
     }
 }
 

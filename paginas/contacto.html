@@ -119,49 +119,59 @@
           <div class="divFormulario">
             <article id="formulario">
               <h3>Mandanos un mail con tu propuesta!</h3>
-              <form class="row g-3 needs-validation" class="was-validated"validate>
-
+              <form class="row g-3 needs-validation" method="POST" action="./php/procesar-form.php" validate>
                 <div class="col-md-4">
                   <label for="validationCustom01" class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="" required>
+                  <input type="text" class="form-control" id="validationCustom01"  placeholder="Ej.: David" name="nombre" required>
                   <div class="valid-feedback">
                     ¡Muy bien!
                   </div>
                 </div>
                 <div class="col-md-4">
                   <label for="validationCustom02" class="form-label">Apellido</label>
-                  <input type="text" class="form-control" id="validationCustom02" value="" required>
+                  <input type="text" class="form-control" id="validationCustom02"  placeholder="Ej.: Lynch" name="apellido" required>
                   <div class="valid-feedback">
                     ¡Se ve bien!
                   </div>
                 </div>
-                <div class="col-md-6">
-                  <label for="validationCustom03" class="form-label">País</label>
-                  <input type="text" class="form-control" id="validationCustom03" required>
-                  <div class="invalid-feedback">
-                    Proporcione un país válido.
+                <div class="col-md-4">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="validationCustom01" name="email" required>
+                  <div class="valid-feedback">
+                    ¡Muy bien!
                   </div>
                 </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Provincia y localidad</label>
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Ej.: Buenos Aires, Ituzaingó" name="provinciaYlocalidad" required>
+                  <div class="invalid-feedback">
+                    Proporcione una provincia y localidad válidas.
+                  </div>
+                </div>
+                
                 <div class="col-md-4">
-                  <label for="validationCustom01" class="form-label"> Empresa/ proyecto</label>
-                  <input type="text" class="form-control" id="validationCustom01" value="" required>
+                  <label for="validationCustom04" class="form-label"> Empresa/ proyecto</label>
+                  <input type="text" class="form-control" id="validationCustom01"  placeholder="Ej.: Dreamworks" name="empresa" required>
                   <div class="valid-feedback">
                     ¡Muy bien!
                   </div>
                 </div>
                 <div class="mb-3">
-                  <label for="validationTextarea" class="form-label">¿Tiene una propuesta? ¡Cuéntenos! </label>
-                  <textarea class="form-control" id="validationTextarea" placeholder="Required example textarea" required></textarea>
+                  <label for="validationTextarea" class="form-label">Explique su propuesta</label>
+                  <textarea class="form-control" id="validationTextarea" placeholder="Explique brevemente" name="propuesta" required></textarea>
                   <div class="invalid-feedback">
-                    Coloque aquí su propuesta brevemente.
+                    Coloque aquí su propuesta.
                   </div>
                 </div>
               
-                <div class="form-check mb-3">
-                  <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
-                  <label class="form-check-label" for="validationFormCheck1">Trabajo pago</label>
-                  <div class="invalid-feedback">Texto inválido</div>
+                <div class="form-check">
+                  <input type="radio" class="form-check-input" id="validationFormCheck2" name="radio-stacked" required>
+                  <label class="form-check-label" for="validationFormCheck2">Trabajo pago</label>
                 </div>
+                <div class="form-check mb-3">
+                  <input type="radio" class="form-check-input" id="validationFormCheck3" name="radio-stacked" required>
+                  <label class="form-check-label" for="validationFormCheck3">Trabajo no pago</label>
+                  <div class="invalid-feedback">Elija una opción</div>
                 </div>
                 <div class="col-12">
                   <div class="form-check">
@@ -175,26 +185,29 @@
                   </div>
                 </div>
                 <div class="col-12">
-                  <button class="btn btn-primary" type="submit">Enviar mail</button>
+                  <button class="btn btn-primary btnContacto" type="submit">Enviar mail</button>
                 </div>
               </form>
             </article>
           </div>
-
+          <div class="graciasFormulario">
+            <p>Gracias por contactarte con nosotros, te contestaremos en la brevedad!</p>
+          </div>
+          <div class="invalidoFormulario">
+            Algo salió mal. <a href="contacto.html">Volver a intentarlo</a>
+          </div>
+          <footer>
+            <p></p>
+          </footer>
+        </div>
         </section>
       </div>
-      <section>
-
-      </section>
-
-      <footer>
-        <p></p>
-      </footer>
-    </div>
+     
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/script-general.js"></script>
+    <script src="./js/script-formulario.js"></script>
+    <script src="./js/script-general.js"></script>
     
   </body>
     
