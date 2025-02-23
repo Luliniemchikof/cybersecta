@@ -359,7 +359,7 @@ ul .dropdown-menu{
     justify-content: center;
 }
 .btnContacto{
-    width: 20%;
+    width: 40%;
 }
 label {
     width: 90%;
@@ -371,6 +371,22 @@ h3{
 
 .graciasFormulario, .invalidoFormulario{
     display: none;
+}
+/*Noticias*/
+.linkNoticias{
+    color: rgb(255, 176, 189);
+    
+}
+.linkNoticias:hover{
+    color: rgb(253, 214, 221);
+    text-decoration:underline;
+}
+.linkNoticias:active{
+    color: yellowgreen;
+    text-decoration:underline;
+}
+h5{
+    text-align: center;
 }
 
 @media (max-width:1024px){
