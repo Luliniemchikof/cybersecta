@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias: GEEA x Cybersecta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font 1-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--Font 1-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> <!--Font 1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--Font 2-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><!--Font 2-->
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Cutive+Mono&family=Orbitron:wght@400..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet"> <!--Font 2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"><!--Estilos de menu-->
+    <link rel=stylesheet href=hamburger-menu.css> <!--hamburguer menu-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/estilos-general.css"> <!--CSS general-->
+  </head>
+  <body>
+    <div class="contenedor">
+      <header>
+        <img class="logo" src="../img/logo.jpg" alt="logo">
+        <h1>Cybersecta</h1>
+      </header>
+      <div class="cuerpo">
+        <div class="desktop-menu"> <!--Nav de la versión desktop-->
+          <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
+            <ul class="nav nav-pills">
+              <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Instalaciones</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="index.html">Sobre instalaciones</a></li>
+                  <li><a class="dropdown-item" href="../instalaciones/kunka-galeria.html">Kunka Galería</a></li>
+                  <li><a class="dropdown-item" href="../instalaciones/kunka-2.html">Kunka 2</a></li>
+                  <li><a class="dropdown-item" href="../instalaciones/laberinto-picnic.html">Laberinto</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../vj/index.html" role="button" aria-expanded="false">VJ</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../vj/index.html">Sobre vj</a></li>
+                  <li><a class="dropdown-item" href="../vj/manufresh-1.html">Primera vez: Manu Fresh</a></li>
+                  <li><a class="dropdown-item" href="../vj/manufresh-billetes.html">Manufresh: Billetes</a></li>
+                  <li><a class="dropdown-item" href="../vj/manufresh-estimulos.html">Manu Fresh: Estímulos</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../audiovisual/index.html" role="button" aria-expanded="false">Audiovisual</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../audiovisual/burkina-faso.html">Burkina Faso</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="vj/index.html" role="button" aria-expanded="false">Colaboradores</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../colaboradores/index.html">Sobre colaboradores</a></li>
+                  <li><a class="dropdown-item" href="../colaboradores/luciana-niemchikof.html">Maligna y Sospechosa</a></li>
+                  <li><a class="dropdown-item" href="../colaboradores/luciano-biasutti.html">Prensuti</a></li>
+                  <li><a class="dropdown-item" href="../colaboradores/pedro-ponto-rojas.html">PePontoRojas</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="../noticias/index.html" target="_self">Noticias</a></li>
+              <li class="nav-item"><a class="nav-link" href="../juego/index.html" target="_self">Juego cybersectario</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="mobile-menu"> <!--Nav de la versión mobile-->
+          <nav>
+            <div class="topnav">
+              <a href="index.html" target="_self">Noticias: GEEA x Cybersecta</a>
+              <div id="myLinks">
+                <ul class="nav nav-pills">
+                  <li class="nav-link"><a href="../index.html" target="_self">Inicio</a></li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="index.html" role="button" aria-expanded="false">Instalaciones</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../instalaciones/index.html">Sobre instalaciones</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/kunka-galeria.html">Kunka Galería</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/kunka-2.html">Kunka 2</a></li>
+                      <li><a class="dropdown-item" href="../instalaciones/laberinto-picnic.html">Laberinto</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../vj/index.html" role="button" aria-expanded="false">VJ</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../vj/index.html">Sobre vj</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-1.html">Primera vez: Manu Fresh</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-billetes.html">Manufresh: Billetes</a></li>
+                      <li><a class="dropdown-item" href="../vj/manufresh-estimulos.html">Manu Fresh: Estímulos</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../audiovisual/index.html" role="button" aria-expanded="false">Audiovisual</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../audiovisual/burkina-faso.html">Burkina Faso</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../colaboradores/index.html" role="button" aria-expanded="false">Colaboradores</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="../colaboradores/index.html">Sobre colaboradores</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/luciana-niemchikof.html">Maligna y Sospechosa</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/luciano-biasutti.html">Prensuti</a></li>
+                      <li><a class="dropdown-item" href="../colaboradores/pedro-ponto-rojas.html">PePontoRojas</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item"><a class="nav-link" href="../noticias/index.html" target="_self">Noticias</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../juego/index.html" target="_self">Juego cybersectario</a></li>
+                </ul>
+              </div>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
+          </nav>
+        </div>
+      
+        <main class="texto">
+          <h2>Encuentro electrónico: Cybersecta ft. GEEA</h2>
+          <p>Con su descripción como "humilde grupo de estudio, por el momento entre compas de artes electrónicas (untref) y artes multimediales (una)", GEEA intenta ser un receptorio de gente interesada en la electrónica y en los proyectos compartidos. En principio, surge de manera privada entre estudiantes entusiastas durante el verano y luego, en el marco del período lectivo en la UNTREF, universidad de la que son oriundos los creadores del grupo, se intentará llevar adelante de manera conjunta con el estudiantado y los docentes interesados en guiar los proyectos.</p>
+          <div class="verInstalaciones">
+            <img class="imgElementosInstalacion" src="img/caratula-noticias-geea.JPG" alt="Foto en encuentros electrónicos con GEEA">
+            <img class="imgElementosInstalacion" src="img/geea-2.jpg" alt="Foto en encuentros electrónicos con GEEA">
+          </div>
+          <p>Cybersecta participa con la presencia de <a class="linkLuciana" href="../colaboradores/luciana-niemchikof.html" data-toggle="popover" title="Ver colaborador: Maligna y Sospechosa" data-content="Ver colaborador: Maligna y Sospechosa">Maligna y Sospechosa</a> y <a class="linkPedro" href="../colaboradores/pedro-ponto-rojas.html" data-toggle="popover" title="Ver colaborador: Pedro" data-content="Ver colaborador: Pedro" >PePontoRojas</a>, quienes han participado de los últimos encuentros electrónicos, donde se barajaron proyectos de audio, como sintetizadores, y quedó como resultado un registro audiovisual para compartir con el resto de los colegas entusiastas.</p>
+          <div class="divIframe">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/f87nFpsmCVA?si=H9zuD3D9qiB68D_i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="logos">
+            <a href="https://drive.google.com/drive/folders/1-jZnB4vr_8kmOQwos4hPPjBFlG7CvjsM" target="_blank"><img class="imgLogos" src="img/drive-logo.png" alt="Logo de Google Drive"></a>
+            <a href="https://www.instagram.com/geea.lynch/?utm_source=ig_web_button_share_sheet" target="_blank"><img class="imgLogos" src="img/instagram-logo.png" alt="Logo de Instagram"></a>
+            <a href="https://www.youtube.com/@electronica.tanguera" target="_blank"><img class="imgLogos" src="img/youtube-logo.png" alt="Logo de Youtube"></a>
+          </div>
+          
+        </main>
+      </div>
+
+      <footer>
+        <p></p>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/script-general.js"></script>
+    
+  </body>
+    
+</html>

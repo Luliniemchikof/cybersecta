@@ -292,6 +292,9 @@ ul .dropdown-menu{
 .videoManuFresh{
     max-width: 70%;
 }
+.imgBilletes{
+    align-self: center;
+}
 
 /*Estilos de colaboradores*/
 .linkPedro{
@@ -323,6 +326,53 @@ ul .dropdown-menu{
 }
 .linkLuciana:active{
     color:#04AA6D;
+}
+        /*Página PRENSUTI*/
+.prensuti{
+    background-image: url(../colaboradores/img/lulo-background.jpg);
+}
+.prensuti h2{
+    color:  rgb(143, 90, 212);
+}
+.prensuti h3{
+    background-color: black;
+    margin: 1em;
+}
+.prensuti li{
+    font-weight: 400;
+}
+.cartaPokemon{
+    display: flex;
+    flex-direction: row;
+    background-color: #000000e8;
+    width: 100%;
+    padding: 1em;
+    border: .5em solid #000000e8;
+    -webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+ 	border-radius: 10px;
+}
+.arte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+    
+}
+.cartaPokemon img{
+    width: 100%;
+    margin: .2em;
+    display: block;
+}
+
+.imgColaboradores{
+    max-width: 100%;
+}
+.carousel-inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Estilos Contacto*/
@@ -388,7 +438,30 @@ h3{
 h5{
     text-align: center;
 }
-
+.divIframe{
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+iframe{
+    width: 60%;
+    align-self: center;
+}
+.logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 1em;
+}
+.imgLogos{
+    width: 30px;
+}
+.imgLogos:hover{
+    width: 40px;
+    
+}
 @media (max-width:1024px){
     nav{
         font-size: .8em;
@@ -446,7 +519,7 @@ h5{
   
     /* Estilos de activación de link (o home/logo) */
     .active {
-        background-color: #04AA6D;
+        background-color: #ffffff00;
         color: white;
     }
     .elementosInstalacion li div{
@@ -519,5 +592,12 @@ h5{
     }
     .videoManuFresh{
         max-width: 100%;
+    }
+    iframe{
+        width: 100%;
+    }
+    /*Estilos COLABORADORES*/
+    .cartaPokemon{
+        flex-direction: column;
     }
 }

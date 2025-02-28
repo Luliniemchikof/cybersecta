@@ -31,7 +31,6 @@
             <nav> <!--Estoy utilizando el nav de "pills with dropdowns de Bootstrap" en la url: https://getbootstrap.com/docs/5.3/components/navs-tabs/#available-styles pero no se está aplicando el dropdown. Dejo el código de la página tal cual en la subsección de "animacion" para corrobirar que no funciona.-->
               <ul class="nav nav-pills">
                 <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
-                <li class="nav-link"><a href="#" target="_self">LINK</a></li>
                 <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Instalaciones</a>
                   <ul class="dropdown-menu">
                     <li><a class="dropdown-item" href="./instalaciones/index.html">Sobre instalaciones</a></li>
@@ -63,7 +62,6 @@
                 </li>
                 <li class="nav-item"><a class="nav-link" href="noticias/index.html" target="_self">Noticias</a></li>
                 <li class="nav-item"><a class="nav-link" href="juego/index.html" target="_self">Juego cybersectario</a></li>
-                <li class="nav-item"><a class="nav-link" href="#" target="_self">OTRO LINK</a></li>
               </ul>
             </nav>
           </div>
@@ -74,7 +72,6 @@
                 <div id="myLinks">
                   <ul class="nav nav-pills">
                     <li class="nav-link"><a href="index.html" target="_self">Inicio</a></li>
-                    <li class="nav-link"><a href="#" target="_self">LINK</a></li>
                     <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="../index.html" role="button" aria-expanded="false">Instalaciones</a>
                       <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="./instalaciones/index.html">Sobre instalaciones</a></li>
@@ -106,7 +103,6 @@
                     </li>
                     <li class="nav-item"><a class="nav-link" href="noticias/index.html" target="_self">Noticias</a></li>
                     <li class="nav-item"><a class="nav-link" href="juego/index.html" target="_self">Juego cybersectario</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" target="_self">OTRO LINK</a></li>
                   </ul>
                 </div>
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -128,19 +124,19 @@
               <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="img/caratula-noticias-pagina.png" class="d-block w-100" alt="Foto en encuentros electrónicos con GEEA">
+                    <img src="noticias/img/caratula-noticias-pagina.png" class="d-block w-100" alt="Screenshot de página web">
                     <p>¡Estrenamos sitio web!</p>
-                    <a href="noticias/pagina-web.html" class="btn btn-primary" data-toggle="popover" title="Ir a la página del proyecto" data-content="Ir a la página del proyecto">Ver nota</a>
+                    <a href="noticias/pagina-web.html" class="btn btn-primary" data-toggle="popover" title="Ir a la nota del proyecto" data-content="Ir a la nota del proyecto">Ver nota</a>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/caratula-noticias-geea.JPG" class="d-block w-100" alt="Foto en encuentros electrónicos con GEEA">
+                    <img src="noticias/img/caratula-noticias-geea.JPG" class="d-block w-100" alt="Foto en encuentros electrónicos con GEEA">
                     <p>Encuentro electrónico: Cybersecta ft. GEEA</p>
-                    <a href="noticias/encuentro-geea.html" class="btn btn-primary" data-toggle="popover" title="Ir a la página del proyecto" data-content="Ir a la página del proyecto">Ver nota</a>
+                    <a href="noticias/encuentro-geea.html" class="btn btn-primary" data-toggle="popover" title="Ir a la nota del proyecto" data-content="Ir a la nota del proyecto">Ver nota</a>
                   </div>
                   <div class="carousel-item">
-                    <img src="img/carula-noticias-video.png" class="d-block w-100" alt="Frame del video del resumen del año 2024">
+                    <img src="noticias/img/carula-noticias-video.png" class="d-block w-100" alt="Frame del video del resumen del año 2024">
                     <p>Resumen del año 2024 x PePontoRojas</p>
-                    <a href="noticias/resumen2024.html" target="_blank" class="btn btn-primary" data-toggle="popover" title="Ir al artículo" data-content="Ir a la publicación">Ver nota</a>
+                    <a href="noticias/resumen2024.html" target="_blank" class="btn btn-primary" data-toggle="popover" title="Ir al artículo" data-content="Ir al artículo">Ver nota</a>
                   </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
@@ -156,7 +152,7 @@
           </div>
         </div>
         
-        <section class="texto">
+        <main class="texto">
           <h2>Bienvenidx a Cybersecta!</h2>
           <h3>¿Qué es Cybersecta?</h3>
           <p class="textoCentrado">Cybersecta es un proyecto de tres amigos, surgido a partir de una propuesta multimedial para <a href="https://www.instagram.com/kunkafestival?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" data-toggle="popover" title="Ir a Instagram @kunkafestival" data-content="Ir a Instagram @kunkafestival">Kunka Festival</a>, un evento que se realizó en Zona Oeste durante 2023. Aquí se busca poner en práctica técnicas multimedia en un sentido de comunidad con artistas de la zona. Tanto si se trabaja en algún proyecto audiovisual, visual o de alguna otra clase más “cerrada”, se busca que el proyecto tenga alguna interacción con otros medios en la producción de la obra y/o en su reproducción y combinar fuerzas y conocimientos para potenciar el arte del under de Argentina.</p>
@@ -191,11 +187,9 @@
             <button type="button" class="slider-nav slider-nav-next"></button>
           </div>
           <p class="pMobile"><strong>⬆⬆ Desliza para ver la galería de fotos</strong></p>
-        </section>
+        </main>
       </div>
-      <section>
-
-      </section>
+      
 
       <footer>
         <p></p>
