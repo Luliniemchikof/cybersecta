@@ -9,6 +9,9 @@ body{
     
 }
 .contenedor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     line-height: 2.4em;
     background-color: black;
@@ -159,6 +162,9 @@ ul .dropdown-menu{
 }
 
 /*Estilos de Instalaciones*/
+.indiceInterno{
+    align-self: flex-start;
+}
 .imgFloat1, .imgFloat2{
     max-width: 35%;
     margin: 1em;
@@ -358,8 +364,6 @@ ul .dropdown-menu{
     color:#04AA6D;
 }
 
- /*Página PRENSUTI*/
-
 
 .cartaPokemon{
     display: flex;
@@ -372,32 +376,18 @@ ul .dropdown-menu{
   	-moz-border-radius: 10px;
  	border-radius: 10px;
 }
-.arte{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:1em;
-    
-}
+
 .cartaPokemon img{
     width: 100%;
     margin: .2em;
     display: block;
 }
 
-.imgColaboradores{
-    max-width: 100%;
-}
-.carousel-inner{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.imgFotosLuli{
+
+.imgFotosArte{
     max-width: 30%;
 }
-.luli{
+.arteMobile{
     display: none;
 }
 
@@ -444,10 +434,10 @@ label {
 h3{
     display: block;
 }
-
-.graciasFormulario, .invalidoFormulario{
-    display: none;
+h4{
+    font-size: 1.2em;
 }
+
 /*Noticias*/
 .linkNoticias{
     color: rgb(255, 176, 189);
@@ -487,6 +477,113 @@ iframe{
 .imgLogos:hover{
     width: 40px;
     
+}
+.publicacionIg{
+    animation-name: color;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes color{
+    0% {background-color: rgb(255, 0, 0);} 
+    15% {background-color: rgb(255, 174, 0);} 
+    30% {background-color: #ff0;} 
+    45% {background-color: rgb(60, 255, 0);} 
+    60% {background-color: rgb(0, 247, 255);} 
+    75% {background-color: rgb(0, 17, 255);} 
+    90% {background-color: rgb(247, 0, 255);} 
+    100% {background-color: rgb(255, 0, 0);} /*Genero la animación para el background del botón*/
+    
+}
+.publicacionIg a{
+    color: black;
+}
+
+/*Estilos Info Pag*/
+.developer{
+    background-image: url(../img/developer-background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logos2{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.imgLogos2{
+    width: 45%;
+    margin: .1em;
+}
+.imgLogos2:hover{
+    width: 50%;
+    
+}
+.developerCard{
+    background-color: black;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    box-shadow: 0px 0px 20px rgb(55, 190, 28);
+    border-radius: 2em;
+}
+.imgDeveloper{
+    width: 40%;
+    box-shadow: 0px 0px 20px  rgb(38, 131, 19);
+    border-radius: 20em;
+    margin-top: 4em;
+}
+.divDescripcionDeveloper{
+    margin: 1em;
+}
+.divDescripcionDeveloper h3, .divDescripcionDeveloper h4{
+    text-align: center;
+    line-height: 2em;
+}
+
+
+.divImgDeveloper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Footer*/
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    background-color: #03291b;
+    margin: 2em;
+}
+.footerLogo, .footerLinks, .ulContacto{
+    width: 30%;
+    margin: 1em;
+}
+.footerLogo img{
+    width: 70%;
+}
+footer ul{
+    list-style-type: none;
+}
+.footerLinks a:hover{
+    text-decoration: underline;
+}
+footer h3{
+    color: #ddd;
+}
+.ulContacto img{
+    width: 3em;
+    margin: 1em;
+}
+.ulContacto img:hover{
+    width: 3.5em;
 }
 @media (max-width:1024px){
     nav{
@@ -554,9 +651,13 @@ iframe{
     .texto{
         align-self: center;
     }
-    .card{
+    .cardInicio{
         display: none;
     }
+    .imgDeveloper{
+        width: 60%;
+    }
+    
 }
 
 @media (max-width:768px){
@@ -583,8 +684,8 @@ iframe{
     }
     
   
-    /*Estilos Instalaciones*/
     .imgFloat1, .imgFloat2{
+    /*Estilos Instalaciones*/
         float: none;
         max-width: 90%;
     }
@@ -625,5 +726,53 @@ iframe{
     /*Estilos COLABORADORES*/
     .cartaPokemon{
         flex-direction: column;
+    }
+    .arteDesktop{
+        display: none;
+    }
+    .arteMobile{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin:1em;
+    }
+    .imgColaboradores, .imgFotosArte{
+        max-width: 100%;
+    }
+    .carousel-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer{
+        width: 100%;
+        flex-direction: column;
+        margin: 0;
+        margin-top: 1em;
+    }
+    .footerLogo, .footerLinks, .ulContacto{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footerLogo, .ulContacto{
+        flex-direction: row;
+    }
+    footer div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    footer h3{
+        text-align: center;
+    }
+    .footerLinks{
+        flex-direction: column;
+    }
+    .footerLogo img{
+        width: 60%;
     }
 }

@@ -1,16 +1,31 @@
-let titulo=document.querySelector('h1');
+let titulo1=document.querySelector('.titulo1');
+let titulo2=document.querySelector('.titulo2');
 
-titulo.addEventListener('click', e => {
+if(titulo1){
+  titulo1.addEventListener('click', e => {
     window.location.replace("../index.html");
+  });
+  titulo1.addEventListener('mouseover', e => {
     
-});
-titulo.addEventListener('mouseover', e => {
+    titulo1.style.cursor = "pointer";
+  });
+}
+
+if(titulo2){
+  titulo2.addEventListener('click', e => {
+    window.location.replace("../../index.html");
+  });
+  titulo2.addEventListener('mouseover', e => {
     
-    titulo.style.cursor = "pointer";
-});
+    titulo2.style.cursor = "pointer";
+  });
+}
+    
+
+
 
 //Estilos del nav
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
+// Alternar entre mostrar y esconder los links del menu de navegación cuando el usuario clickea en el hamburger menu//
 function myFunction() {
     let x = document.getElementById("myLinks");
     if (x.style.display === "block") {
