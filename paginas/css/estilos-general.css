@@ -540,7 +540,6 @@ iframe{
     line-height: 2em;
 }
 
-
 .divImgDeveloper{
     display: flex;
     flex-direction: row;
@@ -654,6 +653,9 @@ footer h3{
     .cardInicio{
         display: none;
     }
+    .developerCard{
+        width: 70%;
+    }
     .imgDeveloper{
         width: 60%;
     }
@@ -744,6 +746,10 @@ footer h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .developerCard{
+        width: 85%;
     }
 
     footer{

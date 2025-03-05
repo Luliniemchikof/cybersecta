@@ -40,8 +40,5 @@ emergenciaWindow.addEventListener('click', e => {
 });
 
 
-
-
-
 //AGREGAR EL RESPONSIVE
 console.log('Hola, sujeto extraño! Esperamos que te guste. Podés pasarnos dinero al alias "maligna.sospechosa". Te queremos mucho <3')
