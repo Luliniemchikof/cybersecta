@@ -116,7 +116,6 @@ ul .dropdown-menu{
 .texto{
     width: 80%;
     align-self: flex-start;
-    padding: .5em;
     border: .1em dashed rgb(129, 129, 44);
     margin: .5em;
     padding: 1em;
@@ -170,10 +169,13 @@ ul .dropdown-menu{
     margin: 1em;
 }
 .imgFloat1{
-    float: inline-end;
+    float:right
 }
 .imgFloat2{
-    float: inline-start;
+    float: left;
+}
+.FloarVertical{
+    max-width: 15%;
 }
 .verInstalaciones, .verVj, .verColaboradores{
     display: flex;
@@ -230,7 +232,7 @@ ul .dropdown-menu{
     color: #022719;
     font-weight: 500;
     text-align: center;
-    margin: .2;
+    margin: .2em;
 }
 #labe2{
     display: none;
@@ -390,6 +392,10 @@ ul .dropdown-menu{
 .arteMobile{
     display: none;
 }
+/*Estilos AUDIOVISUAL*/
+.verBurkina{
+    background-color: rgb(22, 99, 12);
+}
 
 /*Estilos Contacto*/
 .card{ /*estilo de carta en inicio*/
@@ -436,7 +442,16 @@ h3{
 }
 h4{
     font-size: 1.2em;
+    text-decoration: underline;
 }
+#detalleseleccion {
+    height: 5em;
+    line-height: 1em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid;
+  }
 
 /*Noticias*/
 .linkNoticias{
@@ -459,6 +474,7 @@ h5{
  display: flex;
  flex-direction: column;
  justify-content: center;
+ margin: 1em
 }
 iframe{
     width: 60%;
@@ -479,6 +495,10 @@ iframe{
     
 }
 .publicacionIg{
+    color: black;
+    font-weight: 400;
+    padding: .2em .5em;
+    text-align: center;
     animation-name: color;
     animation-duration: 2s;
     animation-iteration-count: infinite;
@@ -494,8 +514,11 @@ iframe{
     100% {background-color: rgb(255, 0, 0);} /*Genero la animación para el background del botón*/
     
 }
-.publicacionIg a{
-    color: black;
+.publicacionIg:hover{
+    padding: .3em .6em;
+}
+.publicacionIg:active{
+    padding: .1em .4em;
 }
 
 /*Estilos Info Pag*/
@@ -523,12 +546,12 @@ iframe{
     display: flex;
     flex-direction: column;
     align-self: center;
-    box-shadow: 0px 0px 20px rgb(55, 190, 28);
+    box-shadow: 0 0 20px rgb(55, 190, 28);
     border-radius: 2em;
 }
 .imgDeveloper{
     width: 40%;
-    box-shadow: 0px 0px 20px  rgb(38, 131, 19);
+    box-shadow: 0 0 20px  rgb(38, 131, 19);
     border-radius: 20em;
     margin-top: 4em;
 }
@@ -539,7 +562,6 @@ iframe{
     text-align: center;
     line-height: 2em;
 }
-
 
 .divImgDeveloper{
     display: flex;
@@ -654,6 +676,9 @@ footer h3{
     .cardInicio{
         display: none;
     }
+    .developerCard{
+        width: 70%;
+    }
     .imgDeveloper{
         width: 60%;
     }
@@ -720,8 +745,14 @@ footer h3{
     .videoManuFresh{
         max-width: 100%;
     }
+    .divIframe{
+        margin: 0;
+    }
     iframe{
         width: 100%;
+    }
+    .indiceInterno{
+        display: none;
     }
     /*Estilos COLABORADORES*/
     .cartaPokemon{
@@ -744,6 +775,10 @@ footer h3{
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    .developerCard{
+        width: 85%;
     }
 
     footer{

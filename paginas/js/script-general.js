@@ -1,6 +1,7 @@
 let titulo1=document.querySelector('.titulo1');
 let titulo2=document.querySelector('.titulo2');
 
+
 if(titulo1){
   titulo1.addEventListener('click', e => {
     window.location.replace("../index.html");
