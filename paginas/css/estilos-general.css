@@ -780,6 +780,9 @@ footer h3{
     .developerCard{
         width: 85%;
     }
+    #detalleseleccion{
+        width: 100%;
+    }
 
     footer{
         width: 100%;
