@@ -22,7 +22,6 @@ mensaje.textContent = "Turno de Tele de tubo"; // Muestra el mensaje de inicio
 
 // Función que maneja el click en las celdas
 let handleClick = (event) => {
-
     // Si el juego terminó, no hacer nada
     if (!gameActive) return;
 
@@ -62,8 +61,7 @@ let handleClick = (event) => {
         if (currentPlayer == 'Tele de tubo') { //Imágenes de los ganadores
             winnerImg.src = "img/winner-tele.png"; 
             winnerImg.alt = "Winner tele de tubo!";
-            
-            
+        
         } else {
             winnerImg.src = "img/winner-hdmi.png"; 
             winnerImg.alt = "Winner HDMI!";

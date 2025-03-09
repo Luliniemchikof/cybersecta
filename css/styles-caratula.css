@@ -39,6 +39,26 @@ h1 {
     font-style: normal; 
 }
 
+<<<<<<< HEAD
+=======
+.link a:link{
+    color: black;
+    text-decoration: none;
+}
+.link a:visited{
+    color: black;
+    text-decoration: none;
+}
+.link a:hover{
+    color: yellowgreen;
+    text-decoration:underline;
+}
+.link a:active{
+    color: rgb(50, 66, 205);
+    text-decoration: underline;
+}
+
+>>>>>>> 8dd44e445ef758164837e3d7d7f4306e9c9f2a68
 
 section {
     align-self: flex-start;
@@ -101,6 +121,7 @@ article img{
 
 
 @media (max-width:768px){
+<<<<<<< HEAD
     body{
         background-repeat: repeat;
     }
@@ -108,12 +129,17 @@ article img{
         padding: 0;
         height: 50em;
         
+=======
+    .contenedor{
+        padding: 5em 0em 15em 8em;
+>>>>>>> 8dd44e445ef758164837e3d7d7f4306e9c9f2a68
     }
     section{
         display: none;
     }
     
     main{
+<<<<<<< HEAD
         max-width: 80%;
         padding: 0;
         margin-bottom: 10em;
@@ -130,5 +156,8 @@ article img{
         padding: 0;
         font-size: 2.5em;
         font-weight: 600;
+=======
+        max-width: 90%;
+>>>>>>> 8dd44e445ef758164837e3d7d7f4306e9c9f2a68
     }
 }
